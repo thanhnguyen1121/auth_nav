@@ -1,10 +1,12 @@
-abstract class  AuthNavigationState {
+abstract class AuthNavigationState {
   factory AuthNavigationState.authorized() {
     return Authorized();
   }
+
   factory AuthNavigationState.unAuthorized() {
     return UnAuthorized();
   }
+
   factory AuthNavigationState.loadConfig() {
     return LoadConfig();
   }
@@ -15,6 +17,10 @@ abstract class  AuthNavigationState {
 
   factory AuthNavigationState.guestMode() {
     return GuestMode();
+  }
+
+  factory AuthNavigationState.Onboarding() {
+    return Onboarding();
   }
 }
 
@@ -27,3 +33,5 @@ class LoadConfig implements AuthNavigationState {}
 class Maintenance implements AuthNavigationState {}
 
 class GuestMode implements AuthNavigationState {}
+
+class Onboarding implements AuthNavigationState {}
