@@ -19,7 +19,7 @@ abstract class AuthNavigationState {
     return GuestMode();
   }
 
-  factory AuthNavigationState.Onboarding() {
+  factory AuthNavigationState.onboarding() {
     return Onboarding();
   }
 }
