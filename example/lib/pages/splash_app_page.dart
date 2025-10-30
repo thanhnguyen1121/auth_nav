@@ -1,11 +1,9 @@
-import 'dart:developer' as developer;
 import 'package:auth_nav/navigation/auth_navigation.dart';
 import 'package:auth_nav/navigation/splash_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SplashAppPage extends SplashPage {
-
   SplashAppPage(InitializeApp initializeApp) : super(initializeApp);
 
   @override
